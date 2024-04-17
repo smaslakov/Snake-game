@@ -6,6 +6,8 @@
 #include <QGraphicsItem>
 #include <QResizeEvent>
 #include "snake.h"
+#include <QKeyEvent>
+#include "food.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -21,8 +23,9 @@ public:
     ~MainWindow();
 
 private:
+    void keyPressEvent(QKeyEvent* event);
     Snake* snake;
-    void resizeEvent(QResizeEvent *event) override;
+    Food* food;
     QGraphicsRectItem * back;
     Ui::MainWindow *ui;
     QGraphicsScene* scene;
