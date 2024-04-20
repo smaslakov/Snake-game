@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
     scene->setSceneRect(0,0,1000,800);
     back = new QGraphicsRectItem(0,0,3000,2400);
-    back->setBrush(QPixmap("/Users/sagot/Documents/Snake-game/snake-game/images/back.jpg"));
+    back->setBrush(QPixmap("/Users/sagot/Documents/Snake-game/images/back.jpg"));
     back->setZValue(-100);
     scene->addItem(back);
     snake = new Snake(scene);

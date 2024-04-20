@@ -35,10 +35,10 @@ Snake::Snake(QGraphicsScene * scene){
     for(int i = 0;i < lenght;++i){
         QGraphicsPixmapItem* snakepart = new QGraphicsPixmapItem();
         if(i == 0){
-            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/snake-game/images/snakeUnit9Head.png"));
+            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9Head.png"));
             snakepart->setTransformOriginPoint(snakepart->pixmap().width()/2, snakepart->pixmap().height()/2);
         }else{
-            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/snake-game/images/snakeUnit9.png"));
+            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9.png"));
             snakepart->setZValue(-1 - (i % 100));
         }
         snakepart->setPos(StartXpos,StartYpos - 8 *(lenght - i));
@@ -155,7 +155,7 @@ void Snake::move()
             delete food;
 
             QGraphicsPixmapItem* newBodyPart = new QGraphicsPixmapItem();
-            newBodyPart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/snake-game/images/snakeUnit9.png"));
+            newBodyPart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9.png"));
             if(direction == "right" || direction == "left"){
                 newBodyPart->setPos(body[body.length() - 1]->pos().rx() - 8, body[body.length() - 1]->pos().ry());
             }
