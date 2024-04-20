@@ -4,13 +4,12 @@
 #include <QPainter>
 #include <QTimer>
 #include <QGraphicsPixmapItem>
-class Food : public QObject
+class Food : public QObject,public QGraphicsPixmapItem
 {
-    QTimer* timer;
-    QVector<QGraphicsPixmapItem*> allfood;
-    void resetFood();
+
 public:
     Food(QGraphicsScene*);
+
 };
 
 #endif // FOOD_H

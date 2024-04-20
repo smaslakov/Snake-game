@@ -4,6 +4,7 @@
 #include <QGraphicsPixmapItem>
 //#include <QPainter>
 #include <QTimer>
+#include "food.h"
 class Snake : public QObject
 {
     int lenght;
@@ -21,6 +22,8 @@ class Snake : public QObject
 public:
     void setDirection(QString);
     QString getDirection();
+    void setSpeed(int);
+    int getSpeed();
     Snake(QGraphicsScene*);
 };
 

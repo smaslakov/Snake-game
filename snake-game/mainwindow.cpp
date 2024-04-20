@@ -10,13 +10,17 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setScene(scene);
     ui->graphicsView->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
     scene->setSceneRect(0,0,1000,800);
-    back = new QGraphicsRectItem(0,0,1000,800);
+    back = new QGraphicsRectItem(0,0,3000,2400);
     back->setBrush(QPixmap("/Users/sagot/Documents/Snake-game/snake-game/images/back.jpg"));
     back->setZValue(-100);
     scene->addItem(back);
     snake = new Snake(scene);
-    food = new Food(scene);
-    //scene->addItem(snake);
+    for(int i = 0;i < 50;++i){
+        new Food(scene);
+    }
+    screenMoveTimer = new QTimer();
+    connect(screenMoveTimer,&QTimer::timeout,this,&MainWindow::MoveScreenWithSnake);
+    screenMoveTimer->start(100);
 }
 MainWindow::~MainWindow()
 {
@@ -39,5 +43,21 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
     }
     if(event->key() == Qt::Key_S || event->key() == Qt::Key_Down){
         snake->setDirection("down");
+    }
+}
+
+void MainWindow::MoveScreenWithSnake()
+{
+    if(snake->getDirection() == "right"){
+        back->setPos(back->x() + snake->getSpeed(), back->y());
+    }
+    else if(snake->getDirection() == "left"){
+        back->setPos(back->x() - snake->getSpeed(), back->y());
+    }
+    else if(snake->getDirection() == "up"){
+        back->setPos(back->x(), back->y() - snake->getSpeed());
+    }
+    else if(snake->getDirection() == "down"){
+        back->setPos(back->x(), back->y() + snake->getSpeed());
     }
 }

@@ -7,6 +7,7 @@
 #include <QResizeEvent>
 #include "snake.h"
 #include <QKeyEvent>
+#include <QTimer>
 #include "food.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,13 +22,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
 private:
+    QTimer *screenMoveTimer;
     void keyPressEvent(QKeyEvent* event);
     Snake* snake;
-    Food* food;
     QGraphicsRectItem * back;
     Ui::MainWindow *ui;
     QGraphicsScene* scene;
+private slots:
+    void MoveScreenWithSnake();
 };
 #endif // MAINWINDOW_H
