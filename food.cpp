@@ -1,11 +1,15 @@
 #include "food.h"
 
-
-
-Food::Food(QGraphicsScene * scene)
+Food::Food(): QGraphicsPixmapItem()
 {
-    QString imagePath = "/Users/sagot/Documents/Snake-game/images/f" + QString::number((rand() % 7) + 1) + ".png";
+    QString imagePath = "/Users/sagot/Documents/Snake-game/images/f" + QString::number((rand() % 6) + 1) + ".png";
     setPixmap(QPixmap(imagePath));
-    setPos(rand() % 1000, rand() % 800);
-    scene->addItem(this);
+    setPos(rand() % 4000, rand() % 4000);
+
+}
+Food::Food(long double x,long double y)
+{
+    QString imagePath = "/Users/sagot/Documents/Snake-game/images/f" + QString::number((rand() % 6) + 1) + ".png";
+    setPixmap(QPixmap(imagePath));
+    setPos(x, y);
 }

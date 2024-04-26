@@ -16,7 +16,15 @@ qt_add_executable(Snake_game
         mainwindow.h
         mainwindow.ui
         snake.cpp
-        snake.h)
+        snake.h
+        Pepper.cpp
+        Pepper.h
+        ItemsContainer.cpp
+        ItemsContainer.h
+        SnakeAI.cpp
+        SnakeAI.h
+        SnakePart.cpp
+        SnakePart.h)
 target_link_libraries(Snake_game PRIVATE Qt6::Widgets)
 
 set_target_properties(Snake_game PROPERTIES

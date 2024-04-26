@@ -1,0 +1,5 @@
+/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/Snake_game.dir
+/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/Snake_game_autogen_timestamp_deps.dir
+/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/Snake_game_autogen.dir

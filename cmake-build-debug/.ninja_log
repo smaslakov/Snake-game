@@ -1,0 +1,22 @@
+# ninja log v5
+2409	2751	1714123711167955777	Snake_game.app/Contents/MacOS/Snake_game	faf0be681156cd32
+714	3929	1714043941360235518	CMakeFiles/Snake_game.dir/main.cpp.o	d22197b90e54eec1
+715	3573	1714043941005643046	CMakeFiles/Snake_game.dir/ItemsContainer.cpp.o	7dddbb932506a60
+100	2702	1714119788654361321	CMakeFiles/Snake_game.dir/snake.cpp.o	62be69c41bedf773
+7	85	1714123708511655445	Snake_game_autogen/mocs_compilation.cpp	42337701a044e0be
+7	85	1714123708511655445	/Users/sagot/Documents/Snake-game/cmake-build-debug/Snake_game_autogen/mocs_compilation.cpp	42337701a044e0be
+3574	5524	1714043942956756798	CMakeFiles/Snake_game.dir/SnakePart.cpp.o	e9a86e7cd573b97
+111	2016	1714039514541179002	CMakeFiles/Snake_game.dir/food.cpp.o	b8e46f62d95cf24a
+713	3908	1714043941333951597	CMakeFiles/Snake_game.dir/Snake_game_autogen/mocs_compilation.cpp.o	296a9f7188f9a05b
+7	85	1714123708511655445	Snake_game_autogen/timestamp	42337701a044e0be
+89	2409	1714123710825548235	CMakeFiles/Snake_game.dir/mainwindow.cpp.o	b6e53b585048a239
+7	85	1714123708511655445	/Users/sagot/Documents/Snake-game/cmake-build-debug/Snake_game_autogen/timestamp	42337701a044e0be
+100	1740	1714044906393694406	CMakeFiles/Snake_game.dir/Pepper.cpp.o	16a21013490540a1
+90	2244	1714123710655463466	CMakeFiles/Snake_game.dir/SnakeAI.cpp.o	626746d0ba489a06
+8	107	1714123771562574207	Snake_game_autogen/timestamp	42337701a044e0be
+8	107	1714123771562574207	Snake_game_autogen/mocs_compilation.cpp	42337701a044e0be
+8	107	1714123771562574207	/Users/sagot/Documents/Snake-game/cmake-build-debug/Snake_game_autogen/timestamp	42337701a044e0be
+8	107	1714123771562574207	/Users/sagot/Documents/Snake-game/cmake-build-debug/Snake_game_autogen/mocs_compilation.cpp	42337701a044e0be
+112	2240	1714123773684989841	CMakeFiles/Snake_game.dir/SnakeAI.cpp.o	626746d0ba489a06
+111	2398	1714123773843689874	CMakeFiles/Snake_game.dir/mainwindow.cpp.o	b6e53b585048a239
+2398	2747	1714123774195296386	Snake_game.app/Contents/MacOS/Snake_game	faf0be681156cd32

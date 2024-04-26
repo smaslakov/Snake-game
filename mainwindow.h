@@ -9,6 +9,9 @@
 #include <QKeyEvent>
 #include <QTimer>
 #include "food.h"
+#include "Pepper.h"
+#include "ItemsContainer.h"
+#include "SnakeAI.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -23,13 +26,18 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 private:
-    QTimer *screenMoveTimer;
+    QTimer* ScreenMoveTimer;
     void keyPressEvent(QKeyEvent* event);
     Snake* snake;
+    SnakeAI* snakeai1;
+    SnakeAI* snakeai2;
+    SnakeAI* snakeai3;
+    SnakeAI* snakeai4;
     QGraphicsRectItem * back;
     Ui::MainWindow *ui;
     QGraphicsScene* scene;
+
 private slots:
-    void MoveScreenWithSnake();
+    void moveScreen();
 };
 #endif // MAINWINDOW_H

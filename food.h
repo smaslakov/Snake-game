@@ -4,12 +4,12 @@
 #include <QPainter>
 #include <QTimer>
 #include <QGraphicsPixmapItem>
-class Food : public QObject,public QGraphicsPixmapItem
+class Food : public QGraphicsPixmapItem
 {
 
 public:
-    Food(QGraphicsScene*);
-
+    Food();
+    Food(long double x,long double y);
 };
 
 #endif // FOOD_H

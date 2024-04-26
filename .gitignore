@@ -31,9 +31,22 @@
 *.out
 *.app
 
-# Build dir
+# Build directories
+**/build/
+**/build-*/
+
+# Editor-specific files
+**/.DS_Store
+**/.cache/
+**/.idea/
+
+# CMake build files
+**/cmake-build-debug/
+**/CMakeFiles
+**/CMakeCache.txt
 **/build/
 **/build-*/
 **/.DS_Store
 **/.cache/
 **/.idea/
+**/.

@@ -1,40 +1,41 @@
-#ifndef SNAKE_H
-#define SNAKE_H
+
+#ifndef SNAKE_GAME_SNAKEAI_H
+#define SNAKE_GAME_SNAKEAI_H
+
 #include <QGraphicsScene>
 #include <QGraphicsPixmapItem>
-#include "SnakePart.h"
-//#include <QPainter>
 #include <QTimer>
 #include "food.h"
-class Snake : public QObject
-{
-    Q_OBJECT
+#include "Pepper.h"
+#include "SnakePart.h"
+class SnakeAI : public QObject{
+    QString name;
     int lenght;
     int speed;
-    QString name;
+    bool PepperEffectActive;
     QVector<SnakePart*> body;
     QString direction;
     QPointF startpos;
     bool alive;
     int SceneWidth = 1000;
     int SceneHeight = 800;
-    QTimer* SnakeMoveTimer;
-    QTimer* PepperActiveTimer;
+    QTimer* SnakeAIMoveTimer;
+    QTimer* PepperAIActiveTimer;
+    void CheckCollision();
+    QGraphicsEllipseItem* boundary;
     //void paint (QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget);
     //QRectF boundingRect() const;
-    signals:
-    void moveSignal();
 private slots:
     void move();
     void PepperDisactive();
 public:
-    QPointF getHeadPos();
     void setDirection(QString);
     QString getDirection();
     void setSpeed(int);
     int getSpeed();
-    Snake(QGraphicsScene*,float,float,QString);
+    SnakeAI(QGraphicsScene*,float,float,QString);
     void destroySnake();
 };
 
-#endif // SNAKE_H
+
+#endif //SNAKE_GAME_SNAKEAI_H
