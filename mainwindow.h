@@ -26,16 +26,19 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 private:
-    QTimer* ScreenMoveTimer;
+    void pause();
+    void continueGame();
     void keyPressEvent(QKeyEvent* event);
+    void startGame();
     Snake* snake;
     SnakeAI* snakeai1;
-    SnakeAI* snakeai2;
-    SnakeAI* snakeai3;
-    SnakeAI* snakeai4;
     QGraphicsRectItem * back;
     Ui::MainWindow *ui;
     QGraphicsScene* scene;
+    int numberOfAiSnakes;
+    void spawnStones();
+    void spawnFood();
+    void spawnPeppers();
 
 private slots:
     void moveScreen();

@@ -5,12 +5,14 @@
 #include "snake.h"
 #include "Pepper.h"
 #include "SnakeAI.h"
+#include "Stone.h"
 class ItemsContainer {
 public:
     static QVector<SnakeAI*> allSnakesAI;
     static QVector<Pepper*> allPeppers;
     static QVector<Food*> allFoods;
-    static QVector<Snake*> allSnakes;
+    static QVector<QString> allNames;
+    static QVector<Stone*> allStones;
 };
 
 

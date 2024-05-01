@@ -313,6 +313,8 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Documents/Snake-game/SnakeAI.h \
 	/Users/sagot/Documents/Snake-game/SnakePart.cpp \
 	/Users/sagot/Documents/Snake-game/SnakePart.h \
+	/Users/sagot/Documents/Snake-game/Stone.cpp \
+	/Users/sagot/Documents/Snake-game/Stone.h \
 	/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake \
 	/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake \
 	/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake \
@@ -322,6 +324,8 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Documents/Snake-game/main.cpp \
 	/Users/sagot/Documents/Snake-game/mainwindow.cpp \
 	/Users/sagot/Documents/Snake-game/mainwindow.h \
+	/Users/sagot/Documents/Snake-game/menuwindow.cpp \
+	/Users/sagot/Documents/Snake-game/menuwindow.h \
 	/Users/sagot/Documents/Snake-game/snake.cpp \
 	/Users/sagot/Documents/Snake-game/snake.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/Headers/QList \
@@ -494,6 +498,7 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsPixmapItem \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
@@ -668,115 +673,43 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompilerABI.c \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystem.cmake.in \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckIncludeFile.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckLibraryExists.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindOpenGL.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindThreads.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/GNUInstallDirs.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/MacroAddFileDependencies.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Determine-CXX.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckIncludeFile.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckLibraryExists.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindOpenGL.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindThreads.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/GNUInstallDirs.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/MacroAddFileDependencies.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake \
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake \
+	/Users/sagot/Documents/Snake-game/MenuWindow.ui \
 	/Users/sagot/Documents/Snake-game/mainwindow.ui \
-	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake

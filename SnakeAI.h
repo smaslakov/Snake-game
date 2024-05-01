@@ -17,18 +17,21 @@ class SnakeAI : public QObject{
     QString direction;
     QPointF startpos;
     bool alive;
-    int SceneWidth = 1000;
-    int SceneHeight = 800;
     QTimer* SnakeAIMoveTimer;
     QTimer* PepperAIActiveTimer;
     void CheckCollision();
+    int color;
     QGraphicsEllipseItem* boundary;
     //void paint (QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget);
     //QRectF boundingRect() const;
+    int pepperAITimerRemainingTime;
 private slots:
     void move();
     void PepperDisactive();
 public:
+    void pause_snakeAI();
+    void continue_snakeAI();
+    QPointF getAIHeadPos();
     void setDirection(QString);
     QString getDirection();
     void setSpeed(int);

@@ -10,7 +10,8 @@ SnakeAI::SnakeAI(QGraphicsScene *scene, float StartPosX, float StartPosY, QStrin
     name = n;
     alive = true;
     lenght = 8;
-    speed = 2;
+    speed = 3;
+    color = random() % 10 + 1;
     direction = "up";
     boundary = new QGraphicsEllipseItem(0, 0, 70, 70);
     boundary->setPen(QPen(Qt::transparent));
@@ -19,10 +20,10 @@ SnakeAI::SnakeAI(QGraphicsScene *scene, float StartPosX, float StartPosY, QStrin
     for (int i = 0; i < lenght; ++i) {
         SnakePart *snakepart = new SnakePart(name);
         if (i == 0) {
-            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9Head.png"));
+            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(color) + "Head.png"));
             snakepart->setTransformOriginPoint(snakepart->pixmap().width() / 2, snakepart->pixmap().height() / 2);
         } else {
-            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9.png"));
+            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(color) + ".png"));
             snakepart->setZValue(-1 - (i % 100));
         }
         snakepart->setPos(StartPosX, StartPosY - 8 * (lenght - i));
@@ -62,19 +63,16 @@ void SnakeAI::move() {
             closestFoodPosition = ItemsContainer::allFoods[i]->pos();
         }
     }
-    //if(ItemsContainer::allFoods.empty())closestFoodPosition = {10000000,100000000};
-
     for (int i = 0; i < ItemsContainer::allPeppers.size(); ++i) {
         long long x = abs(snakesHeadPosition.rx() - ItemsContainer::allPeppers[i]->x());
         long double y = abs(snakesHeadPosition.ry() - ItemsContainer::allPeppers[i]->y());
         long double distance = std::sqrt(x * x + y * y);
         if (distance < pepper_min_distance) {
             pepper_min_distance = distance;
-            //qDebug() << i << ItemsContainer::allFoods[i]->pos();
             closestPepperPosition = ItemsContainer::allPeppers[i]->pos();
         }
     }
-    /*if ((PepperEffectActive || ItemsContainer::allPeppers.empty()) && ItemsContainer::allFoods.empty()) {
+   /* if ((PepperEffectActive || ItemsContainer::allPeppers.empty()) && ItemsContainer::allFoods.empty()) {
         if ((rand() % 100) % 3 == 0) {
             int r = rand() % 4;
             if (r == 0 && direction != "left") {
@@ -95,7 +93,6 @@ void SnakeAI::move() {
         dx = closestFoodPosition.rx() - snakesHeadPosition.rx();
         dy = closestFoodPosition.ry() - snakesHeadPosition.ry();
     }
-    qDebug() << (int) closestFoodPosition.rx() << (int) closestFoodPosition.ry();
     if (dx == 0 && dy != 0) {
         if (dy < 0) {
             setDirection("up");
@@ -149,12 +146,10 @@ void SnakeAI::move() {
         if (typeid(*(colliding_items[i])) == typeid(Food)) {
             body[0]->scene()->removeItem(colliding_items[i]);
             ItemsContainer::allFoods.removeOne(colliding_items[i]);
-            bool cjqc = ItemsContainer::allFoods.removeOne(colliding_items[i]);
-            qDebug() << cjqc;
             delete colliding_items[i];
 
             SnakePart *newBodyPart = new SnakePart(name);
-            newBodyPart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9.png"));
+            newBodyPart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(color) + ".png"));
             if (direction == "right" || direction == "left") {
                 newBodyPart->setPos(body[body.length() - 1]->pos().rx() - 8, body[body.length() - 1]->pos().ry());
             }
@@ -171,6 +166,12 @@ void SnakeAI::move() {
             PepperAIActiveTimer->start(4000);
         } else if (typeid(*(colliding_items[i])) == typeid(SnakePart) &&
                    ((SnakePart *) colliding_items[i])->snakeName != name) {
+            destroySnake();
+            break;
+        }else if (typeid(*(colliding_items[i])) == typeid(Stone)) {
+            body[0]->scene()->removeItem(colliding_items[i]);
+            ItemsContainer::allStones.removeOne(colliding_items[i]);
+            delete colliding_items[i];
             destroySnake();
             break;
         }
@@ -208,10 +209,10 @@ void SnakeAI::move() {
         for (int i = 0; i < body.size(); ++i) {
             Food *food = new Food(body[i]->x(), body[i]->y());
             body[i]->scene()->addItem(food);
-            qDebug() << food->x() << food->y();
             ItemsContainer::allFoods.push_back(food);
             body[i]->scene()->removeItem(body[i]);
         }
+        ItemsContainer::allSnakesAI.removeOne(this);
     }
 
     QString SnakeAI::getDirection() {
@@ -243,4 +244,16 @@ void SnakeAI::move() {
 
         }
     }
+QPointF SnakeAI::getAIHeadPos(){
+    return body[0]->pos();
+}
+void SnakeAI::pause_snakeAI() {
+    SnakeAIMoveTimer->stop();
+    PepperAIActiveTimer->stop();
+    pepperAITimerRemainingTime = PepperAIActiveTimer->remainingTime();
+}
 
+void SnakeAI::continue_snakeAI() {
+    SnakeAIMoveTimer->start(20);
+    PepperAIActiveTimer->start(pepperAITimerRemainingTime);
+}

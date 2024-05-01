@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/sagot/Documents/Snake-game -B/Users/sagot/Documents/Snake-game/cmake-build-debug
+  command = /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/sagot/Documents/Snake-game -B/Users/sagot/Documents/Snake-game/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning additional files.
 
 rule CLEAN_ADDITIONAL
-  command = /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCONFIG=$CONFIG -P CMakeFiles/clean_additional.cmake
+  command = /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCONFIG=$CONFIG -P CMakeFiles/clean_additional.cmake
   description = Cleaning additional files...
 
 
@@ -59,7 +59,7 @@ rule CLEAN_ADDITIONAL
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/ninja/mac/ninja $FILE_ARG -t clean $TARGETS
+  command = /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/ninja/mac/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -67,6 +67,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/76E24ECE-5153-494A-9FF9-1469E6AC4F33/d/CLion.app/Contents/bin/ninja/mac/ninja -t targets
+  command = /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/ninja/mac/ninja -t targets
   description = All primary targets available:
 
