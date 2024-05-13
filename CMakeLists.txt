@@ -5,7 +5,7 @@ set(CMAKE_PREFIX_PATH "/Users/sagot/Qt/6.6.1/macos")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets Sql)
 qt_standard_project_setup()
 
 qt_add_executable(Snake_game
@@ -29,8 +29,11 @@ qt_add_executable(Snake_game
         menuwindow.h
         menuwindow.ui
         Stone.cpp
-        Stone.h)
-target_link_libraries(Snake_game PRIVATE Qt6::Widgets)
+        Stone.h
+        leaderboardwindow.cpp
+        leaderboardwindow.h
+        leaderboardwindow.ui)
+target_link_libraries(Snake_game PRIVATE Qt6::Widgets Qt6::Sql)
 
 set_target_properties(Snake_game PROPERTIES
         WIN32_EXECUTABLE ON

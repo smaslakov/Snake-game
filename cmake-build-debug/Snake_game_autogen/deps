@@ -321,6 +321,8 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Documents/Snake-game/cmake-build-debug/Snake_game_autogen/moc_predefs.h \
 	/Users/sagot/Documents/Snake-game/food.cpp \
 	/Users/sagot/Documents/Snake-game/food.h \
+	/Users/sagot/Documents/Snake-game/leaderboardwindow.cpp \
+	/Users/sagot/Documents/Snake-game/leaderboardwindow.h \
 	/Users/sagot/Documents/Snake-game/main.cpp \
 	/Users/sagot/Documents/Snake-game/mainwindow.cpp \
 	/Users/sagot/Documents/Snake-game/mainwindow.h \
@@ -338,6 +340,7 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/Headers/q23utility.h \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/Headers/qabstractitemmodel.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/Headers/qanystringview.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/Headers/qarraydata.h \
@@ -494,9 +497,18 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtGui.framework/Versions/A/Headers/qvector2d.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/Headers/QSqlDatabase \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/Headers/QSqlTableModel \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/Headers/qsqldatabase.h \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/Headers/qsqlquerymodel.h \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/Headers/qsqltablemodel.h \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/Headers/qtsql-config.h \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/Headers/qtsqlexports.h \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/Headers/qtsqlglobal.h \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsItem \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsPixmapItem \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
+	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsTextItem \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
 	/Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
@@ -651,6 +663,27 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake \
 	/Users/sagot/Qt/6.6.1/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake \
@@ -710,6 +743,7 @@ Snake_game_autogen/timestamp: \
 	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake \
 	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake \
 	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake \
+	/Users/sagot/Documents/Snake-game/LeaderBoardWindow.ui \
 	/Users/sagot/Documents/Snake-game/MenuWindow.ui \
 	/Users/sagot/Documents/Snake-game/mainwindow.ui \
 	/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake

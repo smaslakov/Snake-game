@@ -8,7 +8,9 @@
 #include "food.h"
 #include "Pepper.h"
 #include "SnakePart.h"
+#include <QGraphicsTextItem>
 class SnakeAI : public QObject{
+    Q_OBJECT
     QString name;
     int lenght;
     int speed;
@@ -22,13 +24,19 @@ class SnakeAI : public QObject{
     void CheckCollision();
     int color;
     QGraphicsEllipseItem* boundary;
-    //void paint (QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget);
-    //QRectF boundingRect() const;
     int pepperAITimerRemainingTime;
+    QGraphicsTextItem* name_label;
+    QString getSafeDirection();
+    bool collidesWithStones(int x, int y);
+    bool isMoveSafe(QPointF headpos, QString dir);
+signals:
+    void addNewSnakeAiSignal();
 private slots:
     void move();
     void PepperDisactive();
 public:
+    QString getName();
+    int getLength();
     void pause_snakeAI();
     void continue_snakeAI();
     QPointF getAIHeadPos();

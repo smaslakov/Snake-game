@@ -5,25 +5,33 @@
 
 QGraphicsScene *sc;
 
-Snake::Snake(QGraphicsScene *scene, float StartPosX, float StartPosY, QString n) {
+Snake::Snake(QGraphicsScene *scene, float StartPosX, float StartPosY, QString n,int col) {
     name = n;
     alive = true;
     lenght = 8;
     speed = 3;
     direction = "up";
-    for (int i = 0; i < lenght; ++i) {
+    headImagePath = "/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(col) + "Head.png";
+    bodyImagePath = "/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(col) + ".png";
+    for(int i = 0; i < lenght; ++i) {
         SnakePart *snakepart = new SnakePart(name);
         if (i == 0) {
-            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9Head.png"));
+            snakepart->setPixmap(QPixmap(headImagePath));
             snakepart->setTransformOriginPoint(snakepart->pixmap().width() / 2, snakepart->pixmap().height() / 2);
         } else {
-            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9.png"));
+            snakepart->setPixmap(QPixmap(bodyImagePath));
             snakepart->setZValue(-1 - (i % 100));
         }
         snakepart->setPos(StartPosX, StartPosY - 8 * (lenght - i));
         scene->addItem(snakepart);
         body.push_back(snakepart);
     }
+    name_label = new QGraphicsTextItem();
+    name_label->setFont(QFont("calibri", 9));
+    name_label->setPlainText(name);
+    name_label->setDefaultTextColor(Qt::white);
+    name_label->setPos(body[0]->pos().x() + 10, body[0]->pos().y() + 10);
+    scene->addItem(name_label);
     PepperActiveTimer = new QTimer();
     connect(PepperActiveTimer, &QTimer::timeout, this, &Snake::PepperDisactive);
     SnakeMoveTimer = new QTimer();
@@ -32,8 +40,8 @@ Snake::Snake(QGraphicsScene *scene, float StartPosX, float StartPosY, QString n)
 }
 
 void Snake::move() {
-    bool not_in_playground = (body[0]->x() >= 4000 || body[0]->x() <= 0 || body[0]->y() >= 4000 || body[0]->y() <= 0);
-    if (not_in_playground) destroySnake();
+    //bool not_in_playground = (body[0]->x() >= 4000 || body[0]->x() <= 0 || body[0]->y() >= 4000 || body[0]->y() <= 0);
+    //if (not_in_playground) destroySnake();
     if (alive) {
         for (int i = body.length() - 1; i >= 0; --i) {
             if (i != 0) {
@@ -54,7 +62,7 @@ void Snake::move() {
                 body[i]->setX(body[i]->x() - speed);
             }
         }
-
+        name_label->setPos(body[0]->pos().x() + 10, body[0]->pos().y() + 10);
         QList<QGraphicsItem *> colliding_items = body[0]->collidingItems();
         for (int i = 0; i < colliding_items.size(); i++) {
             if (typeid(*(colliding_items[i])) == typeid(Food)) {
@@ -62,7 +70,7 @@ void Snake::move() {
                 ItemsContainer::allFoods.removeOne(colliding_items[i]);
                 delete colliding_items[i];
                 SnakePart *newBodyPart = new SnakePart(name);
-                newBodyPart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit9.png"));
+                newBodyPart->setPixmap(QPixmap(bodyImagePath));
                 newBodyPart->setPos(-1212121, -100121);
                 body[0]->scene()->addItem(newBodyPart);
                 body.append(newBodyPart);
@@ -71,7 +79,6 @@ void Snake::move() {
                 body[i]->scene()->removeItem(colliding_items[i]);
                 ItemsContainer::allPeppers.removeOne(colliding_items[i]);
                 delete colliding_items[i];
-                //speed = 3;
                 SnakeMoveTimer->start(5);
                 speed = 4;
                 PepperActiveTimer->start(4000);
@@ -88,13 +95,12 @@ void Snake::move() {
             }
         }
         emit moveSignal();
-    }
+    }else emit gameOverSignal();
 }
 
 void Snake::PepperDisactive() {
     SnakeMoveTimer->start(20);
     speed = 3;
-    //speed = 2;
 }
 
 void Snake::setDirection(QString dir) {
@@ -117,12 +123,14 @@ void Snake::setDirection(QString dir) {
 }
 
 void Snake::destroySnake() {
+    body[0]->scene()->removeItem(name_label);
     for (int i = 0; i < body.size(); ++i) {
         Food *food = new Food(body[i]->x(), body[i]->y());
         body[i]->scene()->addItem(food);
         ItemsContainer::allFoods.push_back(food);
         body[i]->scene()->removeItem(body[i]);
     }
+    delete name_label;
     alive = false;
 }
 
@@ -145,11 +153,21 @@ QPointF Snake::getHeadPos() {
 
 void Snake::pause_snake() {
     SnakeMoveTimer->stop();
-    PepperActiveTimer->stop();
-    pepperTimerRemainingTime = PepperActiveTimer->remainingTime();
+    if(PepperActiveTimer->isActive()) {
+        pepperTimerRemainingTime = PepperActiveTimer->remainingTime();
+        PepperActiveTimer->stop();
+    }
 }
 
 void Snake::continue_snake() {
     SnakeMoveTimer->start(20);
-    PepperActiveTimer->start(pepperTimerRemainingTime);
+    if(pepperTimerRemainingTime > 0) {
+        PepperActiveTimer->start(pepperTimerRemainingTime);
+    }
+}
+QString Snake::getName(){
+    return name;
+}
+int Snake::getLength(){
+    return lenght;
 }

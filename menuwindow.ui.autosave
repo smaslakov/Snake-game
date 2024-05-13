@@ -239,7 +239,7 @@ border-radius:10px;</string>
      <rect>
       <x>0</x>
       <y>40</y>
-      <width>141</width>
+      <width>171</width>
       <height>61</height>
      </rect>
     </property>
@@ -306,6 +306,44 @@ border-radius:10px;</string>
      <rect>
       <x>60</x>
       <y>120</y>
+      <width>251</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>30</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 30pt &quot;Arial&quot;;
+	border-radius: 30px;
+	background-color:rgb(9, 20, 96);
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(66, 14, 155);
+}
+QPushButton:pressed {
+	background-color: rgb(34, 10, 105);
+	color: white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>ACCEPT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="acceptSkinBut_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>80</y>
       <width>251</width>
       <height>61</height>
      </rect>
