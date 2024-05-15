@@ -32,7 +32,9 @@ qt_add_executable(Snake_game
         Stone.h
         leaderboardwindow.cpp
         leaderboardwindow.h
-        leaderboardwindow.ui)
+        leaderboardwindow.ui
+        database.cpp
+        database.h)
 target_link_libraries(Snake_game PRIVATE Qt6::Widgets Qt6::Sql)
 
 set_target_properties(Snake_game PROPERTIES

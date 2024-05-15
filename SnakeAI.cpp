@@ -227,7 +227,7 @@ void SnakeAI::CheckCollision() {
             break;
         }
     }
-    /*QList<QGraphicsItem *> collidingBoundaryItems = boundary->collidingItems();
+  /*  QList<QGraphicsItem *> collidingBoundaryItems = boundary->collidingItems();
     for (int i = 0; i < collidingBoundaryItems.size(); ++i) {
         bool SnakePartsCollides = (typeid(*(collidingBoundaryItems[i])) == typeid(SnakePart) && (((SnakePart *) collidingBoundaryItems[i])->snakeName != name));
         bool CollidesWithStone = (typeid(*(collidingBoundaryItems[i])) == typeid(Stone));

@@ -1,16 +1,12 @@
-//
-// Created by Stas Maslakov on 13.05.2024.
-//
+#include <QSqlDatabase>
+#include <QSqlTableModel>
+#pragma once
+class Database
+{
+public:
+    QSqlDatabase db;
 
-#ifndef SNAKE_GAME_DATABASE_H
-#define SNAKE_GAME_DATABASE_H
-
-
-
-class database {
-
+    Database();
+    void addToTable(const QString& username, int score);
 };
 
-
-
-#endif //SNAKE_GAME_DATABASE_H

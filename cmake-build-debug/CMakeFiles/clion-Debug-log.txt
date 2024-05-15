@@ -1,4 +1,4 @@
 /private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/3v/n04p5_950y95k13dgw8v41jr0000gn/T/AppTranslocation/AB3F244A-62D4-403E-87A8-9EB3FDC811A2/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/sagot/Documents/Snake-game -B /Users/sagot/Documents/Snake-game/cmake-build-debug
--- Configuring done (0.2s)
+-- Configuring done (0.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/sagot/Documents/Snake-game/cmake-build-debug

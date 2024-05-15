@@ -145,6 +145,14 @@ build CMakeFiles/Snake_game.dir/leaderboardwindow.cpp.o: CXX_COMPILER__Snake_gam
   OBJECT_DIR = CMakeFiles/Snake_game.dir
   OBJECT_FILE_DIR = CMakeFiles/Snake_game.dir
 
+build CMakeFiles/Snake_game.dir/database.cpp.o: CXX_COMPILER__Snake_game_unscanned_Debug /Users/sagot/Documents/Snake-game/database.cpp || cmake_object_order_depends_target_Snake_game
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/Snake_game.dir/database.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics
+  INCLUDES = -I/Users/sagot/Documents/Snake-game/cmake-build-debug/Snake_game_autogen/include -isystem /Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Headers -iframework /Users/sagot/Qt/6.6.1/macos/lib -isystem /Users/sagot/Qt/6.6.1/macos/mkspecs/macx-clang -isystem /Users/sagot/Qt/6.6.1/macos/include -isystem /Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Headers -isystem /Users/sagot/Qt/6.6.1/macos/lib/QtGui.framework/Headers -isystem /Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Headers
+  OBJECT_DIR = CMakeFiles/Snake_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/Snake_game.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Snake_game
@@ -153,7 +161,7 @@ build CMakeFiles/Snake_game.dir/leaderboardwindow.cpp.o: CXX_COMPILER__Snake_gam
 #############################################
 # Link the executable Snake_game.app/Contents/MacOS/Snake_game
 
-build Snake_game.app/Contents/MacOS/Snake_game: CXX_EXECUTABLE_LINKER__Snake_game_Debug CMakeFiles/Snake_game.dir/Snake_game_autogen/mocs_compilation.cpp.o CMakeFiles/Snake_game.dir/food.cpp.o CMakeFiles/Snake_game.dir/main.cpp.o CMakeFiles/Snake_game.dir/mainwindow.cpp.o CMakeFiles/Snake_game.dir/snake.cpp.o CMakeFiles/Snake_game.dir/Pepper.cpp.o CMakeFiles/Snake_game.dir/ItemsContainer.cpp.o CMakeFiles/Snake_game.dir/SnakeAI.cpp.o CMakeFiles/Snake_game.dir/SnakePart.cpp.o CMakeFiles/Snake_game.dir/menuwindow.cpp.o CMakeFiles/Snake_game.dir/Stone.cpp.o CMakeFiles/Snake_game.dir/leaderboardwindow.cpp.o | /Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/QtSql /Users/sagot/Qt/6.6.1/macos/lib/QtGui.framework/Versions/A/QtGui /Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/QtCore || Snake_game_autogen Snake_game_autogen_timestamp_deps
+build Snake_game.app/Contents/MacOS/Snake_game: CXX_EXECUTABLE_LINKER__Snake_game_Debug CMakeFiles/Snake_game.dir/Snake_game_autogen/mocs_compilation.cpp.o CMakeFiles/Snake_game.dir/food.cpp.o CMakeFiles/Snake_game.dir/main.cpp.o CMakeFiles/Snake_game.dir/mainwindow.cpp.o CMakeFiles/Snake_game.dir/snake.cpp.o CMakeFiles/Snake_game.dir/Pepper.cpp.o CMakeFiles/Snake_game.dir/ItemsContainer.cpp.o CMakeFiles/Snake_game.dir/SnakeAI.cpp.o CMakeFiles/Snake_game.dir/SnakePart.cpp.o CMakeFiles/Snake_game.dir/menuwindow.cpp.o CMakeFiles/Snake_game.dir/Stone.cpp.o CMakeFiles/Snake_game.dir/leaderboardwindow.cpp.o CMakeFiles/Snake_game.dir/database.cpp.o | /Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/QtSql /Users/sagot/Qt/6.6.1/macos/lib/QtGui.framework/Versions/A/QtGui /Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/QtCore || Snake_game_autogen Snake_game_autogen_timestamp_deps
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
   LINK_LIBRARIES = -Wl,-rpath,/Users/sagot/Qt/6.6.1/macos/lib  /Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/QtSql  /Users/sagot/Qt/6.6.1/macos/lib/QtGui.framework/Versions/A/QtGui  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal  /Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration
   LINK_PATH = -F/Users/sagot/Qt/6.6.1/macos/lib
@@ -212,7 +220,7 @@ build Snake_game_autogen/timestamp Snake_game_autogen/mocs_compilation.cpp | ${c
 #############################################
 # Phony custom command for CMakeFiles/Snake_game_autogen_timestamp_deps
 
-build CMakeFiles/Snake_game_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Snake_game_autogen_timestamp_deps: phony /Users/sagot/Qt/6.6.1/macos/./libexec/uic /Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/QtSql /Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/QtCore /Users/sagot/Qt/6.6.1/macos/./libexec/moc
+build CMakeFiles/Snake_game_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Snake_game_autogen_timestamp_deps: phony /Users/sagot/Qt/6.6.1/macos/./libexec/moc /Users/sagot/Qt/6.6.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/sagot/Qt/6.6.1/macos/lib/QtSql.framework/Versions/A/QtSql /Users/sagot/Qt/6.6.1/macos/./libexec/uic /Users/sagot/Qt/6.6.1/macos/lib/QtCore.framework/Versions/A/QtCore
 
 
 #############################################

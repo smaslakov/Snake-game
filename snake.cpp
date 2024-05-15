@@ -44,6 +44,7 @@ void Snake::move() {
     //if (not_in_playground) destroySnake();
     if (alive) {
         for (int i = body.length() - 1; i >= 0; --i) {
+            if (!alive) break;
             if (i != 0) {
                 body[i]->setY(body[i - 1]->y());
                 body[i]->setX(body[i - 1]->x());
@@ -95,7 +96,9 @@ void Snake::move() {
             }
         }
         emit moveSignal();
-    }else emit gameOverSignal();
+    }else {
+        emit gameOverSignal();
+    }
 }
 
 void Snake::PepperDisactive() {

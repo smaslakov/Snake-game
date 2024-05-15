@@ -2,7 +2,6 @@
 #include "ui_mainwindow.h"
 #include <QAbstractScrollArea>
 #include <random>
-
 MainWindow::MainWindow(int col,QString login,QWidget *parent)
         : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -41,13 +40,13 @@ MainWindow::MainWindow(int col,QString login,QWidget *parent)
 }
 
 void MainWindow::startGame() {
-    numberOfAiSnakes = 3;
+    numberOfAiSnakes = 10;
     for (int i = 0; i < numberOfAiSnakes; ++i) {
         addNewSnakeAI();
     }
     spawnPeppers();
     spawnFood();
-    spawnStones();
+    //wspawnStones();
 }
 
 void MainWindow::spawnFood() {
@@ -168,6 +167,10 @@ void MainWindow::gameOver() {
     ui->pauseFrame->show();
     ui->gameOver->show();
     ui->score_label->setText(QString::number(snake->getLength()));
+    database.db.open();
+    database.addToTable(snake->getName(),snake->getLength());
+    database.db.close();
+    disconnect(snake, &Snake::gameOverSignal, this, &MainWindow::gameOver);
 }
 
 void MainWindow::quitToMenu() {

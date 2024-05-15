@@ -319,6 +319,8 @@ Snake_game_autogen/timestamp: \
 	/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake \
 	/Users/sagot/Documents/Snake-game/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake \
 	/Users/sagot/Documents/Snake-game/cmake-build-debug/Snake_game_autogen/moc_predefs.h \
+	/Users/sagot/Documents/Snake-game/database.cpp \
+	/Users/sagot/Documents/Snake-game/database.h \
 	/Users/sagot/Documents/Snake-game/food.cpp \
 	/Users/sagot/Documents/Snake-game/food.h \
 	/Users/sagot/Documents/Snake-game/leaderboardwindow.cpp \

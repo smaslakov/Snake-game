@@ -2,8 +2,7 @@
 
 #ifndef SNAKE_GAME_LEADERBOARDWINDOW_H
 #define SNAKE_GAME_LEADERBOARDWINDOW_H
-#include <QSqlDatabase>
-#include <QSqlTableModel>
+#include "database.h"
 #include <QWidget>
 #include "menuwindow.h"
 
@@ -27,7 +26,8 @@ private:
     QSqlTableModel* model;
     MainWindow* mainwindow;
     MenuWindow* menuWindow;
-    void addToTable();
+    Database database;
+    //void addToTable();
 private slots:
     void backToMenu();
 };
