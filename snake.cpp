@@ -11,8 +11,8 @@ Snake::Snake(QGraphicsScene *scene, float StartPosX, float StartPosY, QString n,
     lenght = 8;
     speed = 3;
     direction = "up";
-    headImagePath = "/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(col) + "Head.png";
-    bodyImagePath = "/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(col) + ".png";
+    headImagePath = ":/images/snakeUnit" + QString::number(col) + "Head.png";
+    bodyImagePath = ":/images/snakeUnit" + QString::number(col) + ".png";
     for(int i = 0; i < lenght; ++i) {
         SnakePart *snakepart = new SnakePart(name);
         if (i == 0) {

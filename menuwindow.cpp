@@ -19,7 +19,7 @@ MenuWindow::MenuWindow(int col,QString n,QWidget *parent) : QWidget(parent), ui(
     ui->comboBox->setCurrentIndex(colorIndex);
     QShortcut* shortcut = new QShortcut(QKeySequence(Qt::Key_Return), this);
     ui->skinFrame->hide();
-    QString imagePath = "/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(colorIndex + 1) + "Head.png";
+    QString imagePath = ":/images/SnakeUnit" + QString::number(colorIndex + 1) + "Head.png";
     QPixmap pixmap(imagePath);
     ui->label->setPixmap(pixmap.scaled(50,50));
     connect(shortcut, &QShortcut::activated, this, &MenuWindow::openMainWindow);
@@ -40,7 +40,7 @@ void MenuWindow::openMainWindow() {
 
     // Check if the login and password are empty
     if (login.isEmpty()) {
-        QMessageBox::warning(this, "Error", "Please enter both login and password.");
+        QMessageBox::warning(this, "Error", "Please enter login.");
         return;
     }
 
@@ -59,7 +59,7 @@ void MenuWindow::showSkinFrame() {
     ui->skinFrame->show();
 }
 void MenuWindow::changedColorOnCombobox(int ind) {
-    imagePath = "/Users/sagot/Documents/Snake-game/images/snakeUnit" +  QString::number(ind + 1) + "Head.png";
+    imagePath = ":/images/snakeUnit" +  QString::number(ind + 1) + "Head.png";
     QPixmap pixmap(imagePath);
     ui->label->setPixmap(pixmap.scaled(50,50));
 }

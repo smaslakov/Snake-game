@@ -107,3 +107,4 @@ QVector<QString> ItemsContainer::allNames = {"Blitz",
                                              "Lumos",
                                              "Nebuluna"};
 QVector<Stone*> ItemsContainer::allStones = {};
+//QVector<SnakeInfo> ItemsContainer::allInfoForScoreboard = {};

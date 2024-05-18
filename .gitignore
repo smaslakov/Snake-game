@@ -41,7 +41,7 @@
 **/.idea/
 
 # CMake build files
-**/cmake-build-debug/
+**/cmake-build-debug
 **/CMakeFiles
 **/CMakeCache.txt
 **/build/
@@ -49,4 +49,8 @@
 **/.DS_Store
 **/.cache/
 **/.idea/
-**/.
+**/.sqbpro/
+
+*/*.db
+*/*.sqdbpro
+

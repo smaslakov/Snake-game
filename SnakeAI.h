@@ -27,6 +27,7 @@ class SnakeAI : public QObject{
     int pepperAITimerRemainingTime;
     QGraphicsTextItem* name_label;
     QString getSafeDirection();
+    void calculateClosestWay();
     bool collidesWithStones(int x, int y);
     bool isMoveSafe(QPointF headpos, QString dir);
 signals:

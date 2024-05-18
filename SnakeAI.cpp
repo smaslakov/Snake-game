@@ -20,12 +20,11 @@ SnakeAI::SnakeAI(QGraphicsScene *scene, float StartPosX, float StartPosY, QStrin
     for (int i = 0; i < lenght; ++i) {
         SnakePart *snakepart = new SnakePart(name);
         if (i == 0) {
-            snakepart->setPixmap(QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(color) +
-                                         "Head.png"));
+            snakepart->setPixmap(QPixmap(":/images/snakeUnit" + QString::number(color) + "Head.png"));
             snakepart->setTransformOriginPoint(snakepart->pixmap().width() / 2, snakepart->pixmap().height() / 2);
         } else {
             snakepart->setPixmap(
-                    QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(color) + ".png"));
+                    QPixmap(":/images/snakeUnit" + QString::number(color) + ".png"));
             snakepart->setZValue(-1 - (i % 100));
         }
         snakepart->setPos(StartPosX, StartPosY - 8 * (lenght - i));
@@ -50,8 +49,7 @@ SnakeAI::SnakeAI(QGraphicsScene *scene, float StartPosX, float StartPosY, QStrin
     connect(SnakeAIMoveTimer, &QTimer::timeout, this, &SnakeAI::move);
     if (alive) SnakeAIMoveTimer->start(20);
 }
-
-void SnakeAI::move() {
+void SnakeAI::calculateClosestWay() {
     long double dx;
     long double dy;
     long double food_min_distance = std::numeric_limits<long double>::max();  // Initialize min_distance with a large value
@@ -114,6 +112,9 @@ void SnakeAI::move() {
             }
         }
     }
+}
+void SnakeAI::move() {
+    calculateClosestWay();
     for (int i = body.length() - 1; i >= 0; --i) {
         if (i != 0) {
             body[i]->setY(body[i - 1]->y());
@@ -200,7 +201,7 @@ void SnakeAI::CheckCollision() {
 
             SnakePart *newBodyPart = new SnakePart(name);
             newBodyPart->setPixmap(
-                    QPixmap("/Users/sagot/Documents/Snake-game/images/snakeUnit" + QString::number(color) + ".png"));
+                    QPixmap(":/images/snakeUnit" + QString::number(color) + ".png"));
             if (direction == "right" || direction == "left") {
                 newBodyPart->setPos(body[body.length() - 1]->pos().rx() - 8, body[body.length() - 1]->pos().ry());
             }

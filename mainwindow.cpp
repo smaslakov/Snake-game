@@ -13,7 +13,7 @@ MainWindow::MainWindow(int col,QString login,QWidget *parent)
     ui->graphicsView->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
     scene->setSceneRect(0, 0, 4000, 4000);
     back = new QGraphicsRectItem(0, 0, 4000, 4000);
-    back->setBrush(QPixmap("/Users/sagot/Documents/Snake-game/images/back.jpg"));
+    back->setBrush(QPixmap(":/images/back.jpg"));
     back->setZValue(-100);
     scene->addItem(back);
     float Startx = ui->graphicsView->scene()->width() / 2;
@@ -41,15 +41,17 @@ MainWindow::MainWindow(int col,QString login,QWidget *parent)
 
 void MainWindow::startGame() {
     numberOfAiSnakes = 10;
+    ItemsContainer::allSnakesAI.clear();
     for (int i = 0; i < numberOfAiSnakes; ++i) {
         addNewSnakeAI();
     }
     spawnPeppers();
     spawnFood();
-    //wspawnStones();
+    //spawnStones();
 }
 
 void MainWindow::spawnFood() {
+    ItemsContainer::allFoods.clear();
     for (int i = 0; i < 3000; ++i) {
         Food *food = new Food();
         scene->addItem(food);
@@ -58,6 +60,7 @@ void MainWindow::spawnFood() {
 }
 
 void MainWindow::spawnStones() {
+    ItemsContainer::allStones.clear();
     for (int i = 0; i < 20; ++i) {
         Stone *stone = new Stone();
         scene->addItem(stone);
@@ -66,6 +69,8 @@ void MainWindow::spawnStones() {
 }
 
 void MainWindow::spawnPeppers() {
+    ItemsContainer::allPeppers.clear();
+
     for (int i = 0; i < 500; ++i) {
         Pepper *pepper = new Pepper(scene);
         ItemsContainer::allPeppers.push_back(pepper);
@@ -80,6 +85,17 @@ MainWindow::~MainWindow() {
     for (int i = 0; i < ItemsContainer::allSnakesAI.size(); ++i) {
         delete ItemsContainer::allSnakesAI[i];
     }
+    for (int i = 0; i < ItemsContainer::allFoods.size(); ++i) {
+        delete ItemsContainer::allFoods[i];
+    }
+    for (int i = 0; i < ItemsContainer::allPeppers.size(); ++i) {
+        delete ItemsContainer::allPeppers[i];
+    }
+    ItemsContainer::allSnakesAI.clear();
+    ItemsContainer::allFoods.clear();
+    ItemsContainer::allPeppers.clear();
+    ItemsContainer::allStones.clear();
+    //ItemsContainer::allInfoForScoreboard.clear();
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event) {
