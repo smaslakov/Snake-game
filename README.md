@@ -43,9 +43,13 @@ make
 -snake.cpp, snake.h: Implementation and header for the snake entity.
 -snakeAI.cpp, snakeAI.h: Implementation and header for the bot entity.
 Pepper.cpp, Pepper.h, ItemsContainer.cpp, ItemsContainer.h, SnakeAI.cpp, SnakeAI.h, SnakePart.cpp, SnakePart.h, Stone.cpp, Stone.h, leaderboardwindow.cpp, leaderboardwindow.h, leaderboardwindow.ui, database.cpp, database.h: Other game components and utilities.
-
 ## Screenshots
 
-![MainMenu]<img width="789" alt="Screenshot 2024-05-16 at 15 28 08" src="https://github.com/user-attachments/assets/54e81dbe-ea3b-4ca3-bea7-9f858795b7b4">
-![Game]<img width="1252" alt="Screenshot 2024-09-28 at 15 24 23" src="https://github.com/user-attachments/assets/8b4792e6-e566-4ab0-bea1-89f153af4ada">
-![LeaderBoard]<img width="389" alt="Screenshot 2024-05-16 at 15 28 15" src="https://github.com/user-attachments/assets/e3137ce2-3349-41fd-9c54-38f0932a3384">
+### Main Menu
+![Main Menu](https://github.com/user-attachments/assets/54e81dbe-ea3b-4ca3-bea7-9f858795b7b4)
+
+### In-Game
+![In-Game](https://github.com/user-attachments/assets/8b4792e6-e566-4ab0-bea1-89f153af4ada)
+
+### LeaderBoard
+![LeaderBoard](https://github.com/user-attachments/assets/e3137ce2-3349-41fd-9c54-38f0932a3384)
